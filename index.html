@@ -10,15 +10,49 @@
     
     <meta name="author" content="ArseinRubika">
     
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     <link rel="icon" href="https://s6.uupload.ir/files/copilot_image_1748353149271_4vx.jpeg" type="image/jpeg">
     <link rel="apple-touch-icon" href="https://s6.uupload.ir/files/copilot_image_1748353149271_4vx.jpeg">
     
+    <meta property="og:title" content="آموزش برنامه‌نویسی اندروید و Sketchware Pro | دانلود ArseinRubika">
+    <meta property="og:description" content="بهترین منبع جامع آموزش برنامه‌نویسی اندروید و Sketchware. هزاران ویدئوی پروژه محور و سورس کد آماده برای ساخت اپلیکیشن بدون کدنویسی.">
+    <meta property="og:image" content="https://uploadkon.ir/uploads/1c1709_24bot.png">
+    <meta property="og:url" content="[لینک صفحه اصلی شما]"> 
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fa_IR">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="دانلود ArseinRubika: آموزش جامع Sketchware Pro">
+    <meta name="twitter:description" content="با هزاران ویدئوی پروژه محور و ابزار توسعه، در کمترین زمان به یک توسعه‌دهنده اندروید تبدیل شوید.">
+    <meta name="twitter:image" content="https://uploadkon.ir/uploads/1c1709_24bot.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:wght@400;700&display=swap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ArseinRubika",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0", 
+        "priceCurrency": "IRR" 
+      },
+      "description": "منبع جامع آموزش برنامه‌نویسی اندروید، Sketchware و Sketchware Pro. با هزاران ویدئوی پروژه محور و سورس کد آماده.",
+      "softwareVersion": "9.7",
+      "url": "[لینک صفحه اصلی شما]", 
+      "image": "https://uploadkon.ir/uploads/1c1709_24bot.png",
+      "downloadUrl": "https://mehdi-api.ir/arsein.apk"
+    }
+    </script>
+
     
     <style>
-        /* استایل‌های شما (بدون تغییرات ساختاری) */
+        /* استایل‌های اصلی */
         @font-face {
             font-family: 'IRANSans';
             src: url('fonts/IRANSans.woff2') format('woff2');
@@ -40,6 +74,33 @@
             min-height: 100vh;
             box-sizing: border-box;
         }
+        /* ✅ ۴. استایل دهی به منوی ناوبری داخلی */
+        .main-nav {
+            margin-bottom: 20px;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f5f5f5;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            position: sticky; /* برای ثابت ماندن در بالای صفحه */
+            top: 0;
+            z-index: 100;
+        }
+        .main-nav a {
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            margin: 0 5px;
+            transition: all 0.3s;
+            border-radius: 8px;
+        }
+        .main-nav a:hover {
+            color: white;
+            background-color: #004d40;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
         .container {
             background: #ffffff;
             padding: 40px 20px;
@@ -48,7 +109,7 @@
             max-width: 900px;
             width: 90%;
             box-sizing: border-box;
-            margin-top: 20px;
+            margin-top: 0px; /* تنظیم مجدد به دلیل افزودن نویگیشن */
         }
         .logo img {
             max-width: 180px;
@@ -249,19 +310,47 @@
             margin-bottom: 15px;
             text-align: center;
         }
+
+        /* ✅ ۵. استایل دکمه بازگشت به بالا */
+        #backToTopBtn {
+            display: none; /* مخفی سازی پیشفرض */
+            position: fixed; 
+            bottom: 30px; 
+            right: 30px;
+            z-index: 99; 
+            border: none; 
+            outline: none; 
+            background-color: #004d40; 
+            color: white; 
+            cursor: pointer; 
+            padding: 15px; 
+            border-radius: 10px;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+        #backToTopBtn:hover {
+            background-color: #00695c;
+        }
     </style>
 
     <script>
         // Yektanet Master Script - Do not remove or modify
-        // تغییرات فنی: حذف link rel="preload" و اضافه شدن صفت 'defer' به تگ اسکریپت اصلی.
         !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/5ygUVC6E/native-arseinrubika.litebase.site-42515/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getDate(),
         l=t.createElement("script");l.defer=!0;l.src=c,a.appendChild(l)}(window,document,"yektanet");
     </script>
 </head>
-<body>
+<body id="top"> <nav class="main-nav">
+        <a href="#top">🏠 خانه</a>
+        <a href="#features">⭐ ویژگی‌ها</a>
+        <a href="#video">🎥 معرفی</a>
+        <a href="#download">⬇️ دانلود</a>
+        <a href="https://rubika.ir/ArseinRubikaSupport" target="_blank">📞 پشتیبانی</a>
+    </nav>
+
     <div class="container fade-in">
         <div class="logo">
-            <img src="https://uploadkon.ir/uploads/1c1709_24bot.png" alt="لوگوی برنامه ArseinRubika برای آموزش Sketchware">
+            <img src="https://uploadkon.ir/uploads/1c1709_24bot.png" alt="لوگوی رسمی اپلیکیشن ArseinRubika برای آموزش Sketchware">
         </div>
         
         <h1>ArseinRubika: مسیر شما به سوی تسلط بر برنامه‌نویسی اندروید و Sketchware</h1>
@@ -272,22 +361,22 @@
         <div class="slider">
           <div class="slides">
             <img src="https://s6.uupload.ir/files/photo_5942680642858896284_y_b0yd.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" class="active">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896285_y_3kcl.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896286_y_963d.jpg" alt="لیستی از هزاران ویدئوهای آموزشی Sketchware" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896287_y_rbyj.jpg" alt="ابزارهای کمکی در بخش Sketchware" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896288_y_kusy.jpg" alt="لیستی از هزاران ویدئوهای آموزشی برنامه نویسی" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896289_y_peie.jpg" alt="ابزار های کمکی در بخش برنامه نویسی" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896290_y_lijb.jpg" alt="بخش آیکن ها Icons" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896291_y_oqvi.jpg" alt="مشاهده تمامی اخبار نرم افزار و اپلیکیشن" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896292_y_g0lz.jpg" alt="خواندن مطالب کامل اخبار نرم افزار و اپلیکیشن" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896294_y_8msl.jpg" alt="بخش ChatGpt حاوی هوش مصنوعی متنی و تصویری" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896293_y_d9xi.jpg" alt="بخش ابزارهای کمکی در بخش ChatGpt" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896302_y_uahf.jpg" alt="تصویر کپی کدهای دریافتی از بخش ChatGpt" >
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896307_y_v9uh.jpg" alt="تصویر تنظیمات حساب کاربری" >
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896285_y_3kcl.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896286_y_963d.jpg" alt="لیستی از هزاران ویدئوهای آموزشی Sketchware" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896287_y_rbyj.jpg" alt="ابزارهای کمکی در بخش Sketchware" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896288_y_kusy.jpg" alt="لیستی از هزاران ویدئوهای آموزشی برنامه نویسی" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896289_y_peie.jpg" alt="ابزار های کمکی در بخش برنامه نویسی" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896290_y_lijb.jpg" alt="بخش آیکن ها Icons" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896291_y_oqvi.jpg" alt="مشاهده تمامی اخبار نرم افزار و اپلیکیشن" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896292_y_g0lz.jpg" alt="خواندن مطالب کامل اخبار نرم افزار و اپلیکیشن" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896294_y_8msl.jpg" alt="بخش ChatGpt حاوی هوش مصنوعی متنی و تصویری" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896293_y_d9xi.jpg" alt="بخش ابزارهای کمکی در بخش ChatGpt" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896302_y_uahf.jpg" alt="تصویر کپی کدهای دریافتی از بخش ChatGpt" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896307_y_v9uh.jpg" alt="تصویر تنظیمات حساب کاربری" loading="lazy">
           </div>
         </div>
         
-        <h2>چرا ArseinRubika بهترین انتخاب برای یادگیری Sketchware است؟</h2>
+        <h2 id="features">چرا ArseinRubika بهترین انتخاب برای یادگیری Sketchware است؟</h2>
         <p>ما مجموعه‌ای از ابزارها و محتوای آموزشی را فراهم کرده‌ایم که مستقیماً برای نیازهای توسعه‌دهندگان موبایل در ایران طراحی شده است:</p>
         <ul>
             <li><strong>هزاران ویدئوی آموزشی حرفه‌ای:</strong> آموزش <strong>Sketchware</strong> و <strong>برنامه‌نویسی اندروید</strong> از مفاهیم پایه تا سطح پیشرفته. محتوای ما بر اساس <strong>پروژه‌های عملی</strong> و قابل اجرا طراحی شده است.</li>
@@ -303,7 +392,7 @@
         <div id="pos-article-display-card-106556"></div>
         <br>
 
-        <h2>ویدئوی معرفی و اثبات عملکرد ArseinRubika</h2>
+        <h2 id="video">ویدئوی معرفی و اثبات عملکرد ArseinRubika</h2>
         <div class="video-container">
             <iframe src="https://www.aparat.com/video/video/embed/videohash/lnev4j2/vt/frame" allowfullscreen="true" title="ویدئوی معرفی اپلیکیشن آموزش برنامه‌نویسی اندروید ArseinRubika"></iframe>
         </div>
@@ -316,7 +405,7 @@
         <p style="color: red; font-size: 1.2em; font-weight: bold;">📢 توجه: این نسخه نهایی به دلیل تغییرات فنی، در مایکت منتشر نشده است.</p>
 
         <a class="btn btn-primary" href="#" onclick="return false;">دانلود از مایکت (غیرفعال)</a>
-        <a class="btn btn-primary-direct" href="https://mehdi-api.ir/arsein.apk" download>دانلود مستقیم نسخه نهایی (9.7)</a>
+        <a class="btn btn-primary-direct" id="download" href="https://mehdi-api.ir/arsein.apk" download>دانلود مستقیم نسخه نهایی (9.7)</a>
         <a class="btn btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank">پشتیبانی و ارتباط با ما</a>
 
         <div id="pos-article-display-106497"></div>
@@ -324,7 +413,10 @@
         
     </div>
 
+    <button id="backToTopBtn" title="بازگشت به بالا">⬆️</button>
+
     <script>
+        // منطق اسلایدر
         let slideIndex = 0;
         showSlides(slideIndex);
 
@@ -345,10 +437,31 @@
             setInterval(function() {
                 plusSlides(1);
             }, 4000); 
+
+            // ✅ ۵. منطق دکمه بازگشت به بالا
+            const backToTopBtn = document.getElementById("backToTopBtn");
+
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopBtn.style.display = "block";
+              } else {
+                backToTopBtn.style.display = "none";
+              }
+            }
+            
+            backToTopBtn.addEventListener('click', function() {
+              // حرکت روان به بالای صفحه
+              window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+              });
+            });
         });
     </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
     <div id="litebase-footer" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #0a0a0a"></div>
 </body>
-</html>
+                </html>
