@@ -19,7 +19,7 @@
     <meta property="og:title" content="آموزش برنامه‌نویسی اندروید و Sketchware Pro | دانلود ArseinRubika">
     <meta property="og:description" content="بهترین منبع جامع آموزش برنامه‌نویسی اندروید و Sketchware. هزاران ویدئوی پروژه محور و سورس کد آماده برای ساخت اپلیکیشن بدون کدنویسی.">
     <meta property="og:image" content="https://uploadkon.ir/uploads/1c1709_24bot.png">
-    <meta property="og:url" content="https://arseinrubika.github.io/index.html"> 
+    <meta property="og:url" content="https://arseinrubika.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fa_IR">
     
@@ -27,6 +27,8 @@
     <meta name="twitter:title" content="دانلود ArseinRubika: آموزش جامع Sketchware Pro">
     <meta name="twitter:description" content="با هزاران ویدئوی پروژه محور و ابزار توسعه، در کمترین زمان به یک توسعه‌دهنده اندروید تبدیل شوید.">
     <meta name="twitter:image" content="https://uploadkon.ir/uploads/1c1709_24bot.png">
+
+    <link rel="canonical" href="https://arseinrubika.github.io/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,7 +55,6 @@
     </script>
     
     <style>
-        /* استایل‌های اصلی */
         @font-face {
             font-family: 'IRANSans';
             src: url('fonts/IRANSans.woff2') format('woff2');
@@ -62,7 +63,7 @@
             font-display: swap; 
         }
         body {
-            font-family: 'Lalezar', 'Roboto', 'IRANSans', Tahoma, sans-serif;
+            font-family: 'IRANSans', Tahoma, sans-serif;
             margin: 0;
             padding: 0;
             background: #ffffff;
@@ -71,13 +72,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* حذف min-height: 100vh برای جلوگیری از فشردگی محتوا */
             box-sizing: border-box;
-            /* 🔥 اصلاح برای منوی ثابت: فاصله از بالا هنگام کلیک روی لینک داخلی */
             scroll-padding-top: 60px; 
         }
 
-        /* ✅ ۴ و ۵. استایل دهی منوی ناوبری ریسپانسیو */
+        h1, h2, h3, .latest-version-modern strong {
+            font-family: 'Lalezar', 'IRANSans', Tahoma, sans-serif;
+        }
+
         .main-nav {
             padding: 10px 5px; 
             width: 100%;
@@ -87,9 +89,8 @@
             top: 0;
             z-index: 100;
             
-            /* 🔥 Flexbox برای نمایش صحیح در موبایل */
             display: flex;
-            justify-content: space-around; /* توزیع یکنواخت فضا */
+            justify-content: space-around;
             align-items: center;
             flex-wrap: wrap; 
         }
@@ -98,12 +99,12 @@
             color: #004d40;
             text-decoration: none;
             font-weight: bold;
-            padding: 8px 10px; /* کاهش Padding */
-            margin: 5px 2px; /* کاهش Margin */
+            padding: 8px 10px;
+            margin: 5px 2px;
             transition: all 0.3s;
             border-radius: 8px;
-            font-size: 0.9em; /* کمی کوچک کردن اندازه فونت در موبایل */
-            white-space: nowrap; /* جلوگیری از شکستن خطوط داخل هر دکمه */
+            font-size: 0.9em;
+            white-space: nowrap;
         }
         
         .main-nav a:hover {
@@ -112,7 +113,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
-        /* Media Query برای موبایل‌های بسیار کوچک (حفظ سازگاری) */
         @media (max-width: 400px) {
             .main-nav a {
                 padding: 5px 8px; 
@@ -120,7 +120,6 @@
             }
         }
 
-        /* سایر استایل‌ها (بدون تغییر) */
         .container {
             background: #ffffff;
             padding: 40px 20px;
@@ -330,7 +329,6 @@
             text-align: center;
         }
 
-        /* ۵. استایل دکمه بازگشت به بالا */
         #backToTopBtn {
             display: none; 
             position: fixed; 
@@ -354,7 +352,6 @@
     </style>
 
     <script>
-        // Yektanet Master Script - Do not remove or modify
         !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/5ygUVC6E/native-arseinrubika.litebase.site-42515/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getDate(),
         l=t.createElement("script");l.defer=!0;l.src=c,a.appendChild(l)}(window,document,"yektanet");
     </script>
@@ -381,7 +378,7 @@
 
         <div class="slider">
           <div class="slides">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896284_y_b0yd.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" class="active">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896284_y_b0yd.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" class="active" loading="lazy">
             <img src="https://s6.uupload.ir/files/photo_5942680642858896285_y_3kcl.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" loading="lazy">
             <img src="https://s6.uupload.ir/files/photo_5942680642858896286_y_963d.jpg" alt="لیستی از هزاران ویدئوهای آموزشی Sketchware" loading="lazy">
             <img src="https://s6.uupload.ir/files/photo_5942680642858896287_y_rbyj.jpg" alt="ابزارهای کمکی در بخش Sketchware" loading="lazy">
@@ -421,7 +418,7 @@
         <p><strong>همین حالا اپلیکیشن کامل ArseinRubika را دانلود کنید و اولین قدم را در مسیر برنامه‌نویسی بردارید!</strong></p>
         
         <p class="latest-version-modern pulse">
-            <strong style="color: #004d40;">نسخه نهایی (9.8) منتشر شد:</strong> این نسخه، کامل‌ترین و بی‌نقص‌ترین آپدیت است و دیگر به‌روزرسانی نخواهد شد.
+            <strong style="color: #004d40;">نسخه نهایی (9.8) منتشر شد:</strong> **آرسین؛ جایی که توسعه فقط شروعه، و خلاقیت پایان نداره.**
         </p>
         <p style="color: red; font-size: 1.2em; font-weight: bold;">📢 توجه: این نسخه نهایی به دلیل تغییرات فنی، در مایکت منتشر نشده است.</p>
 
@@ -437,7 +434,6 @@
     <button id="backToTopBtn" title="بازگشت به بالا">⬆️</button>
 
     <script>
-        // منطق اسلایدر
         let slideIndex = 0;
         showSlides(slideIndex);
 
@@ -454,12 +450,10 @@
         }
 
         document.addEventListener('DOMContentLoaded', function() {
-            // تغییر اسلاید هر 4 ثانیه (4000 میلی‌ثانیه)
             setInterval(function() {
                 plusSlides(1);
             }, 4000); 
 
-            // ۵. منطق دکمه بازگشت به بالا
             const backToTopBtn = document.getElementById("backToTopBtn");
 
             window.onscroll = function() {scrollFunction()};
