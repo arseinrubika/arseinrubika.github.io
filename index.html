@@ -32,7 +32,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
     {
@@ -55,15 +55,11 @@
     </script>
     
     <style>
-        @font-face {
-            font-family: 'IRANSans';
-            src: url('fonts/IRANSans.woff2') format('woff2');
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap; 
-        }
+        /* قانون @font-face حذف شد */
+        
+        /* اعمال فونت Vazirmatn به کل بدنه سایت برای یکپارچگی */
         body {
-            font-family: 'IRANSans', Tahoma, sans-serif;
+            font-family: 'Vazirmatn', Tahoma, sans-serif;
             margin: 0;
             padding: 0;
             background: #ffffff;
@@ -76,10 +72,11 @@
             scroll-padding-top: 60px; 
         }
 
-        h1, h2, h3, .latest-version-modern strong {
-            font-family: 'Lalezar', 'IRANSans', Tahoma, sans-serif;
+        h1, h2, h3 {
+             /* استفاده از وزن Bold (700) فونت Vazirmatn برای تیترها */
+             font-weight: 700; 
         }
-
+        
         .main-nav {
             padding: 10px 5px; 
             width: 100%;
@@ -142,7 +139,6 @@
             font-size: 3.5em;
             margin: 0;
             color: #004d40;
-            font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -352,7 +348,7 @@
     </style>
 
     <script>
-        !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/5ygUVC6E/native-arseinrubika.litebase.site-42515/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getDate(),
+        !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n]||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/5ygUVC6E/native-arseinrubika.litebase.site-42515/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getDate(),
         l=t.createElement("script");l.defer=!0;l.src=c,a.appendChild(l)}(window,document,"yektanet");
     </script>
 </head>
@@ -475,7 +471,6 @@
         });
     </script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
     <div id="litebase-footer" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #0a0a0a"></div>
 </body>
-</html>
+                                                      </html>
