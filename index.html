@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>ArseinRubika</title>
+    <title>دانلود ArseinRubika: آموزش برنامه‌نویسی و Sketchware</title>
     
-    <meta name="description" content="دانلود نسخه نهایی ArseinRubika: بهترین منبع جامع آموزش برنامه‌نویسی اندروید، Sketchware و Sketchware Pro. هزاران ویدئوی پروژه محور، ابزار توسعه و سورس کد آماده برای ساخت اپلیکیشن بدون کدنویسی.دانلود arseinrubika.">
+    <meta name="description" content="دانلود نسخه نهایی ArseinRubika (آرسین روبیکا): بهترین منبع جامع آموزش برنامه‌نویسی اندروید، Sketchware و Sketchware Pro. هزاران ویدئوی پروژه محور، ابزار توسعه و سورس کد آماده برای ساخت اپلیکیشن بدون کدنویسی. همین حالا دانلود arseinrubika (آرسین) را تجربه کنید.">
     
     <meta name="author" content="ArseinRubika">
     
@@ -14,8 +14,8 @@
 
     <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
     
-    <meta property="og:title" content="ArseinRubika">
-    <meta property="og:description" content="بهترین منبع جامع آموزش برنامه‌نویسی اندروید و Sketchware. هزاران ویدئوی پروژه محور و سورس کد آماده برای ساخت اپلیکیشن بدون کدنویسی.دانلود arseinrubika.">
+    <meta property="og:title" content="دانلود ArseinRubika">
+    <meta property="og:description" content="بهترین منبع جامع آموزش آموزش برنامه‌نویسی اندروید و Sketchware. هزاران ویدئوی پروژه محور و سورس کد آماده برای ساخت اپلیکیشن بدون کدنویسی. برای دانلود آرسین روبیکا به سایت مراجعه کنید.">
     <meta property="og:image" content="https://uploadkon.ir/uploads/1c1709_24bot.png">
     <meta property="og:url" content="https://arseinrubika.github.io/">
     <meta property="og:type" content="website">
@@ -23,15 +23,15 @@
     <meta property="og:site_name" content="ArseinRubika"> 
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ArseinRubika">
-    <meta name="twitter:description" content="با هزاران ویدئوی پروژه محور و ابزار توسعه، در کمترین زمان به یک توسعه‌دهنده اندروید تبدیل شوید.">
+    <meta name="twitter:title" content="دانلود ArseinRubika (آرسین)">
+    <meta name="twitter:description" content="با هزاران ویدئوی پروژه محور و ابزار توسعه، در کمترین زمان به یک توسعه‌دهنده اندروید تبدیل شوید. دانلود ارسین روبیکا نسخه نهایی.">
     <meta name="twitter:image" content="https://uploadkon.ir/uploads/1c1709_24bot.png">
 
     <link rel="canonical" href="https://arseinrubika.github.io/">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     
     <script type="application/ld+json">
     {
@@ -45,10 +45,10 @@
         "price": "0", 
         "priceCurrency": "IRR" 
       },
-      "description": "منبع جامع آموزش برنامه‌نویسی اندروید، Sketchware و Sketchware Pro. با هزاران ویدئوی پروژه محور و سورس کد آماده.دانلود arseinrubika.",
+      "description": "منبع جامع آموزش برنامه‌نویسی اندروید، Sketchware و Sketchware Pro. با هزاران ویدئوی پروژه محور و سورس کد آماده. برای دانلود آرسین به سایت ما مراجعه کنید.",
       "softwareVersion": "9.8",
       "url": "https://arseinrubika.github.io/", 
-      "image": "https://uploadkon.ir/uploads/1c1709_24bot.png",
+      "image": "/images/logo.png",
       "downloadUrl": "https://arseinrubika.github.io/download/base.apk"
     }
     </script>
@@ -68,7 +68,75 @@
     </script>
     
     <style>
+        .video-container {
+            position: relative;
+            padding-top: 56.25%;
+            background: #000;
+            margin-bottom: 40px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .video-container iframe,
+        .video-container .video-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .video-placeholder {
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .video-placeholder::after {
+            content: '▶️';
+            font-size: 4em;
+            color: white;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .video-container:hover .video-placeholder::after {
+            opacity: 1;
+        }
         
+        .slider {
+            position: relative;
+            max-width: 100%;
+            margin: 40px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            min-height: 500px;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 10;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
         body {
             font-family: 'Vazirmatn', Tahoma, sans-serif;
             margin: 0;
@@ -248,13 +316,7 @@
             0% { opacity: 0; }
             100% { opacity: 1; }
         }
-        .slider {
-            position: relative;
-            max-width: 100%;
-            margin: 40px auto;
-            overflow: hidden;
-            border-radius: 15px;
-        }
+        
         .slides {
             display: flex;
             transition: transform 0.5s ease;
@@ -271,24 +333,16 @@
             display: block;
             transform: scale(1.05);
         }
-        .video-container {
-            position: relative;
-            padding-top: 56.25%;
-            background: #000;
-            margin-bottom: 40px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
+        
         @media (max-width: 600px) {
+            .slider {
+                min-height: 300px;
+            }
+            .prev, .next {
+                font-size: 14px;
+                padding: 10px;
+                margin-top: -15px;
+            }
             h1 {
                 font-size: 2.5em;
             }
@@ -328,14 +382,6 @@
         #litebase-footer {
             display: none;
         }
-        h3 {
-            font-size: 1.4em;
-            color: #004d40;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-
         #backToTopBtn {
             display: none; 
             position: fixed; 
@@ -357,11 +403,6 @@
             background-color: #00695c;
         }
     </style>
-
-    <script>
-        !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n]||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/5ygUVC6E/native-arseinrubika.litebase.site-42515/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getDate(),
-        l=t.createElement("script");l.defer=!0;l.src=c,a.appendChild(l)}(window,document,"yektanet");
-    </script>
 </head>
 <body id="top"> 
 
@@ -370,44 +411,43 @@
         <a href="#video">🎥 معرفی</a> 
         <a href="#features">⭐ ویژگی‌ها</a>
         <a href="#download">⬇️ دانلود</a>
-        <a href="https://rubika.ir/ArseinRubikaSupport" target="_blank">📞 پشتیبانی</a>
+        <a class="btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">📞 پشتیبانی</a>
     </nav>
 
     <div class="container fade-in">
         <div class="logo">
-            <img src="https://uploadkon.ir/uploads/1c1709_24bot.png" alt="لوگوی رسمی اپلیکیشن ArseinRubika برای آموزش Sketchware">
+            <img src="/images/logo.png" alt="لوگوی رسمی اپلیکیشن ArseinRubika برای آموزش Sketchware" width="180" height="180">
         </div>
         
-        <h1>ArseinRubika: مسیر شما به سوی تسلط بر برنامه‌نویسی اندروید و Sketchware</h1>
+        <h1>ArseinRubika (آرسین روبیکا) – آموزش Sketchware و برنامه‌نویسی اندروید</h1>
         
-        <p>آیا رویای <strong>توسعه اپلیکیشن اندروید</strong> را در سر دارید اما با موانع کدنویسی پیچیده روبرو هستید؟ اپلیکیشن <strong>ArseinRubika</strong> به عنوان یک منبع <strong>جامع و کامل</strong>، این مسیر را برای شما هموار کرده است.</p>
-        <p>ما با تمرکز ویژه بر ابزار قدرتمند <strong>Sketchware</strong> و آموزش‌های عمیق <strong>برنامه‌نویسی اندروید</strong>، تمام نیازهای شما از صفر تا صد را در یک محیط ساده و کاربرپسند فراهم کرده‌ایم. دیگر نیازی به جستجو در منابع متعدد نیست؛ با ما، در کمترین زمان به یک توسعه‌دهنده حرفه‌ای تبدیل شوید. برای یادگیری <strong>ساخت اپلیکیشن بدون کدنویسی</strong>، ArseinRubika بهترین انتخاب است.</p>
+        <p>آیا رویای <strong>توسعه اپلیکیشن اندروید</strong> را در سر دارید اما با موانع کدنویسی پیچیده روبرو هستید؟ اپلیکیشن <strong>ArseinRubika (آرسین روبیکا)</strong> به عنوان یک منبع <strong>جامع و کامل</strong>، این مسیر را برای شما هموار کرده است.</p>
+        <p>ما با تمرکز ویژه بر ابزار قدرتمند <strong>Sketchware</strong> و آموزش‌های عمیق <strong>برنامه‌نویسی اندروید</strong>، تمام نیازهای شما از صفر تا صد را در یک محیط ساده و کاربرپسند فراهم کرده‌ایم. دیگر نیازی به جستجو برای <strong>دانلود arsein</strong> یا منابع متعدد نیست؛ با **دانلود آرسین**، در کمترین زمان به یک توسعه‌دهنده حرفه‌ای تبدیل شوید. برای یادگیری <strong>ساخت اپلیکیشن بدون کدنویسی</strong>، ArseinRubika بهترین انتخاب است.</p>
 
         <h2 id="video" style="margin-top: 10px;">🎥 ویدئوی رسمی معرفی و اثبات عملکرد</h2>
-        <div class="video-container">
-            <video poster="https://static.cdn.asset.aparat.cloud/avt/6109111-6718-l_6973.jpg" style="display:none;" controls preload="none">
-                 <source src="https://www.aparat.com/v/lnev4j2" type="video/mp4">
-            </video>
-            
-            <iframe src="https://www.aparat.com/video/video/embed/videohash/lnev4j2/vt/frame" allowfullscreen="true" title="ویدئوی معرفی اپلیکیشن آموزش برنامه‌نویسی اندروید ArseinRubika"></iframe>
+        <div class="video-container" role="button" aria-label="پخش ویدئوی معرفی اپلیکیشن" onclick="loadAparatVideo(this, 'lnev4j2', 'https://static.cdn.asset.aparat.cloud/avt/6109111-6718-l_6973.jpg')">
+             <div class="video-placeholder" style="background-image: url('https://static.cdn.asset.aparat.cloud/avt/6109111-6718-l_6973.jpg');"></div>
         </div>
+
         
-        <div class="slider">
+        <div class="slider" onmouseover="stopAutoSlide()" onmouseleave="startAutoSlide()">
           <div class="slides">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896284_y_b0yd.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" class="active" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896285_y_3kcl.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896286_y_963d.jpg" alt="لیستی از هزاران ویدئوهای آموزشی Sketchware" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896287_y_rbyj.jpg" alt="ابزارهای کمکی در بخش Sketchware" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896288_y_kusy.jpg" alt="لیستی از هزاران ویدئوهای آموزشی برنامه نویسی" loading="lazy">
-            <img src="https://s6.uupload.ir/files/1761024406232_100_97h.png" alt="ابزار های کمکی در بخش برنامه نویسی" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896290_y_lijb.jpg" alt="بخش آیکن ها Icons" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896291_y_oqvi.jpg" alt="مشاهده تمامی اخبار نرم افزار و اپلیکیشن" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896292_y_g0lz.jpg" alt="خواندن مطالب کامل اخبار نرم افزار و اپلیکیشن" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896294_y_8msl.jpg" alt="بخش ChatGpt حاوی هوش مصنوعی متنی و تصویری" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896293_y_d9xi.jpg" alt="بخش ابزارهای کمکی در بخش ChatGpt" loading="lazy">
-            <img src="https://s6.uupload.ir/files/photo_5942680642858896302_y_uahf.jpg" alt="تصویر کپی کدهای دریافتی از بخش ChatGpt" loading="lazy">
-            <img src="https://s6.uupload/ir/files/photo_5942680642858896307_y_v9uh.jpg" alt="تصویر تنظیمات حساب کاربری" loading="lazy">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896284_y_b0yd.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" class="active" loading="eager" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896285_y_3kcl.jpg" alt="تصویری از صفحه اصلی اپلیکیشن آرسین روبیکا" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896286_y_963d.jpg" alt="لیستی از هزاران ویدئوهای آموزشی Sketchware" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896287_y_rbyj.jpg" alt="ابزارهای کمکی در بخش Sketchware" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896288_y_kusy.jpg" alt="لیستی از هزاران ویدئوهای آموزشی برنامه نویسی" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/1761024406232_100_97h.png" alt="ابزار های کمکی در بخش برنامه نویسی" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896290_y_lijb.jpg" alt="بخش آیکن ها Icons" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896291_y_oqvi.jpg" alt="مشاهده تمامی اخبار نرم افزار و اپلیکیشن" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896292_y_g0lz.jpg" alt="خواندن مطالب کامل اخبار نرم افزار و اپلیکیشن" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896294_y_8msl.jpg" alt="بخش ChatGpt حاوی هوش مصنوعی متنی و تصویری" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896293_y_d9xi.jpg" alt="بخش ابزارهای کمکی در بخش ChatGpt" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896302_y_uahf.jpg" alt="تصویر کپی کدهای دریافتی از بخش ChatGpt" loading="lazy" width="900" height="500">
+            <img src="https://s6.uupload.ir/files/photo_5942680642858896307_y_v9uh.jpg" alt="تصویر تنظیمات حساب کاربری" loading="lazy" width="900" height="500">
           </div>
+          <a class="prev" onclick="plusSlides(-1)" aria-label="اسلاید قبلی">❮</a>
+          <a class="next" onclick="plusSlides(1)" aria-label="اسلاید بعدی">❯</a>
         </div>
         
         <h2 id="features">چرا ArseinRubika بهترین انتخاب برای یادگیری Sketchware است؟</h2>
@@ -419,14 +459,14 @@
             <li><strong>جامعیت محتوا:</strong> دیگر نیازی به نصب اپلیکیشن‌های جانبی نیست؛ هر آنچه برای شروع یا تکمیل پروژه‌های خود در <strong>Sketchware Pro</strong> نیاز دارید، اینجا موجود است.</li>
         </ul>
         
-        <h3>این اپلیکیشن برای چه کسانی طراحی شده است؟</h3>
-        <p>ArseinRubika نه تنها برای <strong>مبتدیان مطلق</strong> که هیچ دانش قبلی از کدنویسی ندارند، ایده‌آل است، بلکه یک منبع غنی برای توسعه‌دهندگان باتجربه‌ای است که به دنبال ابزارهای کمکی و <strong>آموزش‌های تخصصی Sketchware</strong> برای ارتقای پروژه‌های خود هستند.</p>
+        <h2>این اپلیکیشن برای چه کسانی طراحی شده است؟</h2>
+        <p>ArseinRubika (ارسین روبیکا) نه تنها برای <strong>مبتدیان مطلق</strong> که هیچ دانش قبلی از کدنویسی ندارند، ایده‌آل است، بلکه یک منبع غنی برای توسعه‌دهندگان باتجربه‌ای است که به دنبال ابزارهای کمکی و <strong>آموزش‌های تخصصی Sketchware</strong> برای ارتقای پروژه‌های خود هستند.</p>
         <p>تمرکز ما بر یادگیری عملی به شما کمک می‌کند تا مفاهیم را از طریق ساخت پروژه‌های واقعی درک کنید.</p>
 
         <div id="pos-article-display-card-106556"></div>
         <br>
 
-        <p><strong>همین حالا اپلیکیشن کامل ArseinRubika را دانلود کنید و اولین قدم را در مسیر برنامه‌نویسی بردارید!</strong></p>
+        <p><strong>همین حالا اپلیکیشن کامل ArseinRubika را دانلود کنید و اولین قدم را در مسیر برنامه‌نویسی بردارید! (دانلود آرسین برای اندروید)</strong></p>
         
         <p class="latest-version-modern pulse">
             <strong style="color: #004d40;">نسخه نهایی (9.8) منتشر شد:</strong> <strong>آرسین؛ جایی که توسعه فقط شروعه، و خلاقیت پایان نداره.</strong>
@@ -434,8 +474,8 @@
         <p style="color: red; font-size: 1.2em; font-weight: bold;">📢 توجه: این نسخه نهایی به دلیل تغییرات فنی، در مایکت منتشر نشده است.</p>
 
         <a class="btn btn-primary" href="#" onclick="return false;">دانلود از مایکت (غیرفعال)</a>
-        <a class="btn btn-primary-direct" id="download" href="https://arseinrubika.github.io/download/base.apk" download>دانلود مستقیم نسخه نهایی (9.8)</a>
-        <a class="btn btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank">پشتیبانی و ارتباط با ما</a>
+        <a class="btn btn-primary-direct" id="download" href="https://arseinrubika.github.io/download/base.apk" download>دانلود مستقیم نسخه نهایی ArseinRubika (9.8)</a>
+        <a class="btn btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">پشتیبانی و ارتباط با ما</a>
 
         <div id="pos-article-display-106497"></div>
         <br>
@@ -445,8 +485,29 @@
     <button id="backToTopBtn" title="بازگشت به بالا">⬆️</button>
 
     <script>
+        !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n]||[];var a=document.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/5ygUVC6E/native-arseinrubika.litebase.site-42515/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getDate(),
+        l=document.createElement("script");l.defer=!0;l.src=c,a.appendChild(l)}(window,document,"yektanet");
+    </script>
+
+    <script>
         let slideIndex = 0;
-        showSlides(slideIndex);
+        let slideInterval;
+        const intervalTime = 4000;
+
+        function loadAparatVideo(element, videoHash, thumbnailUrl) {
+            if (element.querySelector('iframe')) return; 
+
+            const iframe = document.createElement('iframe');
+            iframe.setAttribute('src', `https://www.aparat.com/video/video/embed/videohash/${videoHash}/vt/frame`);
+            iframe.setAttribute('allowfullscreen', 'true');
+            iframe.setAttribute('title', 'ویدئوی معرفی اپلیکیشن آموزش برنامه‌نویسی اندروید ArseinRubika');
+            iframe.setAttribute('width', '100%'); 
+            iframe.setAttribute('height', '100%');
+
+            element.innerHTML = '';
+            element.appendChild(iframe);
+            element.style.cursor = 'default';
+        }
 
         function plusSlides(n) {
             showSlides(slideIndex += n);
@@ -454,16 +515,27 @@
 
         function showSlides(n) {
             let slides = document.querySelectorAll('.slides img');
+            if (slides.length === 0) return;
             if (n >= slides.length) { slideIndex = 0; }
             if (n < 0) { slideIndex = slides.length - 1; }
             slides.forEach(slide => slide.classList.remove('active'));
             slides[slideIndex].classList.add('active');
         }
 
-        document.addEventListener('DOMContentLoaded', function() {
-            setInterval(function() {
+        function startAutoSlide() {
+            stopAutoSlide(); 
+            slideInterval = setInterval(function() {
                 plusSlides(1);
-            }, 4000); 
+            }, intervalTime);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(slideInterval);
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            showSlides(slideIndex);
+            startAutoSlide();
 
             const backToTopBtn = document.getElementById("backToTopBtn");
 
