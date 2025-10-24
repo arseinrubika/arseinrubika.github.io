@@ -48,7 +48,7 @@
       "description": "منبع جامع آموزش برنامه‌نویسی اندروید، Sketchware و Sketchware Pro. با هزاران ویدئوی پروژه محور و سورس کد آماده. برای دانلود آرسین به سایت ما مراجعه کنید.",
       "softwareVersion": "9.8",
       "url": "https://arseinrubika.github.io/", 
-      "image": "/images/logo.png",
+      "image": "logo.png", 
       "downloadUrl": "https://arseinrubika.github.io/download/base.apk"
     }
     </script>
@@ -113,30 +113,24 @@
             border-radius: 15px;
             min-height: 500px;
         }
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0,0,0,0.5);
-            z-index: 10;
+        
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
         }
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
+        .slides img {
+            width: 100%;
+            flex-shrink: 0;
+            display: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
         }
-        .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
+        .slides img.active {
+            display: block;
+            transform: scale(1.05);
         }
-
+        
         body {
             font-family: 'Vazirmatn', Tahoma, sans-serif;
             margin: 0;
@@ -317,31 +311,9 @@
             100% { opacity: 1; }
         }
         
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-        .slides img {
-            width: 100%;
-            flex-shrink: 0;
-            display: none;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            border-radius: 15px;
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
-        .slides img.active {
-            display: block;
-            transform: scale(1.05);
-        }
-        
         @media (max-width: 600px) {
             .slider {
                 min-height: 300px;
-            }
-            .prev, .next {
-                font-size: 14px;
-                padding: 10px;
-                margin-top: -15px;
             }
             h1 {
                 font-size: 2.5em;
@@ -402,6 +374,9 @@
         #backToTopBtn:hover {
             background-color: #00695c;
         }
+        #download-section { 
+            scroll-margin-top: 80px; 
+        }
     </style>
 </head>
 <body id="top"> 
@@ -410,19 +385,19 @@
         <a href="#top">🏠 خانه</a>
         <a href="#video">🎥 معرفی</a> 
         <a href="#features">⭐ ویژگی‌ها</a>
-        <a href="#download">⬇️ دانلود</a>
-        <a class="btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">📞 پشتیبانی</a>
+        <a href="#download-section">⬇️ دانلود</a> 
+<a class="btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">📞 پشتیبانی</a>
     </nav>
 
     <div class="container fade-in">
         <div class="logo">
-            <img src="/images/logo.png" alt="لوگوی رسمی اپلیکیشن ArseinRubika برای آموزش Sketchware" width="180" height="180">
+            <img src="logo.png" alt="لوگوی رسمی اپلیکیشن ArseinRubika برای آموزش Sketchware" width="180" height="180">
         </div>
         
         <h1>ArseinRubika (آرسین روبیکا) – آموزش Sketchware و برنامه‌نویسی اندروید</h1>
         
         <p>آیا رویای <strong>توسعه اپلیکیشن اندروید</strong> را در سر دارید اما با موانع کدنویسی پیچیده روبرو هستید؟ اپلیکیشن <strong>ArseinRubika (آرسین روبیکا)</strong> به عنوان یک منبع <strong>جامع و کامل</strong>، این مسیر را برای شما هموار کرده است.</p>
-        <p>ما با تمرکز ویژه بر ابزار قدرتمند <strong>Sketchware</strong> و آموزش‌های عمیق <strong>برنامه‌نویسی اندروید</strong>، تمام نیازهای شما از صفر تا صد را در یک محیط ساده و کاربرپسند فراهم کرده‌ایم. دیگر نیازی به جستجو برای <strong>دانلود arsein</strong> یا منابع متعدد نیست؛ با **دانلود آرسین**، در کمترین زمان به یک توسعه‌دهنده حرفه‌ای تبدیل شوید. برای یادگیری <strong>ساخت اپلیکیشن بدون کدنویسی</strong>، ArseinRubika بهترین انتخاب است.</p>
+        <p>ما با تمرکز ویژه بر ابزار قدرتمند <strong>Sketchware</strong> و آموزش‌های عمیق <strong>برنامه‌نویسی اندروید</strong>، تمام نیازهای شما از صفر تا صد را در یک محیط ساده و کاربرپسند فراهم کرده‌ایم. دیگر نیازی به جستجو برای <strong>دانلود arsein</strong> یا منابع متعدد نیست؛ با <strong>دانلود آرسین</strong>، در کمترین زمان به یک توسعه‌دهنده حرفه‌ای تبدیل شوید. برای یادگیری <strong>ساخت اپلیکیشن بدون کدنویسی</strong>، ArseinRubika بهترین انتخاب است.</p>
 
         <h2 id="video" style="margin-top: 10px;">🎥 ویدئوی رسمی معرفی و اثبات عملکرد</h2>
         <div class="video-container" role="button" aria-label="پخش ویدئوی معرفی اپلیکیشن" onclick="loadAparatVideo(this, 'lnev4j2', 'https://static.cdn.asset.aparat.cloud/avt/6109111-6718-l_6973.jpg')">
@@ -446,36 +421,37 @@
             <img src="https://s6.uupload.ir/files/photo_5942680642858896302_y_uahf.jpg" alt="تصویر کپی کدهای دریافتی از بخش ChatGpt" loading="lazy" width="900" height="500">
             <img src="https://s6.uupload.ir/files/photo_5942680642858896307_y_v9uh.jpg" alt="تصویر تنظیمات حساب کاربری" loading="lazy" width="900" height="500">
           </div>
-          <a class="prev" onclick="plusSlides(-1)" aria-label="اسلاید قبلی">❮</a>
-          <a class="next" onclick="plusSlides(1)" aria-label="اسلاید بعدی">❯</a>
         </div>
         
         <h2 id="features">چرا ArseinRubika بهترین انتخاب برای یادگیری Sketchware است؟</h2>
         <p>ما مجموعه‌ای از ابزارها و محتوای آموزشی را فراهم کرده‌ایم که مستقیماً برای نیازهای توسعه‌دهندگان موبایل در ایران طراحی شده است:</p>
         <ul>
-            <li><strong>هزاران ویدئوی آموزشی حرفه‌ای:</strong> آموزش <strong>Sketchware</strong> و <strong>برنامه‌نویسی اندروید</strong> از مفاهیم پایه تا سطح پیشرفته. محتوای ما بر اساس <strong>پروژه‌های عملی</strong> و قابل اجرا طراحی شده است.</li>
-            <li><strong>ابزارهای توسعه سریع:</strong> شامل سورس‌کدهای آماده و دیباگرهای کمکی برای <strong>آموزش برنامه نویسی بلوکی</strong>، <strong>توسعه اپلیکیشن</strong> را سریع‌تر و بدون خطای خسته‌کننده پیش ببرید.</li>
-            <li><strong>رابط کاربری ساده و فارسی:</strong> دسترسی آسان و سریع به تمام ابزارها و آموزش‌ها در یک محیط کاملاً کاربرپسند.</li>
-            <li><strong>جامعیت محتوا:</strong> دیگر نیازی به نصب اپلیکیشن‌های جانبی نیست؛ هر آنچه برای شروع یا تکمیل پروژه‌های خود در <strong>Sketchware Pro</strong> نیاز دارید، اینجا موجود است.</li>
+            <li><strong style="font-weight: bold;">هزاران ویدئوی آموزشی حرفه‌ای:</strong> آموزش <strong>Sketchware</strong> و <strong>برنامه‌نویسی اندروید</strong> از مفاهیم پایه تا سطح پیشرفته. محتوای ما بر اساس <strong style="font-weight: bold;">پروژه‌های عملی</strong> و قابل اجرا طراحی شده است.</li>
+            <li><strong style="font-weight: bold;">ابزارهای توسعه سریع:</strong> شامل سورس‌کدهای آماده و دیباگرهای کمکی برای <strong style="font-weight: bold;">آموزش برنامه نویسی بلوکی</strong>، <strong style="font-weight: bold;">توسعه اپلیکیشن</strong> را سریع‌تر و بدون خطای خسته‌کننده پیش ببرید.</li>
+            <li><strong style="font-weight: bold;">رابط کاربری ساده و فارسی:</strong> دسترسی آسان و سریع به تمام ابزارها و آموزش‌ها در یک محیط کاملاً کاربرپسند.</li>
+            <li><strong style="font-weight: bold;">جامعیت محتوا:</strong> دیگر نیازی به نصب اپلیکیشن‌های جانبی نیست؛ هر آنچه برای شروع یا تکمیل پروژه‌های خود در <strong style="font-weight: bold;">Sketchware Pro</strong> نیاز دارید، اینجا موجود است.</li>
         </ul>
         
         <h2>این اپلیکیشن برای چه کسانی طراحی شده است؟</h2>
-        <p>ArseinRubika (ارسین روبیکا) نه تنها برای <strong>مبتدیان مطلق</strong> که هیچ دانش قبلی از کدنویسی ندارند، ایده‌آل است، بلکه یک منبع غنی برای توسعه‌دهندگان باتجربه‌ای است که به دنبال ابزارهای کمکی و <strong>آموزش‌های تخصصی Sketchware</strong> برای ارتقای پروژه‌های خود هستند.</p>
+        <p>ArseinRubika (ارسین روبیکا) نه تنها برای <strong style="font-weight: bold;">مبتدیان مطلق</strong> که هیچ دانش قبلی از کدنویسی ندارند، ایده‌آل است، بلکه یک منبع غنی برای توسعه‌دهندگان باتجربه‌ای است که به دنبال ابزارهای کمکی و <strong style="font-weight: bold;">آموزش‌های تخصصی Sketchware</strong> برای ارتقای پروژه‌های خود هستند.</p>
         <p>تمرکز ما بر یادگیری عملی به شما کمک می‌کند تا مفاهیم را از طریق ساخت پروژه‌های واقعی درک کنید.</p>
 
         <div id="pos-article-display-card-106556"></div>
         <br>
 
-        <p><strong>همین حالا اپلیکیشن کامل ArseinRubika را دانلود کنید و اولین قدم را در مسیر برنامه‌نویسی بردارید! (دانلود آرسین برای اندروید)</strong></p>
+        <p><strong style="font-weight: bold;">همین حالا اپلیکیشن کامل ArseinRubika را دانلود کنید و اولین قدم را در مسیر برنامه‌نویسی بردارید! (دانلود آرسین برای اندروید)</strong></p>
         
         <p class="latest-version-modern pulse">
             <strong style="color: #004d40;">نسخه نهایی (9.8) منتشر شد:</strong> <strong>آرسین؛ جایی که توسعه فقط شروعه، و خلاقیت پایان نداره.</strong>
         </p>
         <p style="color: red; font-size: 1.2em; font-weight: bold;">📢 توجه: این نسخه نهایی به دلیل تغییرات فنی، در مایکت منتشر نشده است.</p>
 
-        <a class="btn btn-primary" href="#" onclick="return false;">دانلود از مایکت (غیرفعال)</a>
-        <a class="btn btn-primary-direct" id="download" href="https://arseinrubika.github.io/download/base.apk" download>دانلود مستقیم نسخه نهایی ArseinRubika (9.8)</a>
-        <a class="btn btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">پشتیبانی و ارتباط با ما</a>
+        <div id="download-section"> 
+            <a class="btn btn-primary" href="#" onclick="return false;">دانلود از مایکت (غیرفعال)</a>
+            <a class="btn btn-primary-direct" href="https://arseinrubika.github.io/download/base.apk" download>دانلود مستقیم نسخه نهایی ArseinRubika (9.8)</a>
+            <a class="btn btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">پشتیبانی و ارتباط با ما</a>
+        </div>
+        
 
         <div id="pos-article-display-106497"></div>
         <br>
