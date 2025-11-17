@@ -453,7 +453,7 @@
             
             <a class="btn btn-primary-direct" 
                href="https://arseinrubika.github.io/base.apk" 
-               onclick="if(/Telegram(F|X)?/i.test(navigator.userAgent)){event.preventDefault(); window.open(this.href, '_system');}else{window.location.href=this.href;}"
+               onclick="handleDownload(this.href)"
             >دانلود مستقیم نسخه نهایی ArseinRubika (9.9)</a>
             
             <a class="btn btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">پشتیبانی و ارتباط با ما</a>
@@ -515,6 +515,28 @@
         function stopAutoSlide() {
             clearInterval(slideInterval);
         }
+        
+        function handleDownload(downloadUrl) {
+            const userAgent = navigator.userAgent;
+
+            const isAppInternalBrowser = 
+                /Telegram(F|X)?/i.test(userAgent) || 
+                /Rubika/i.test(userAgent);           
+            
+            const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+
+            if (isAppInternalBrowser || (isMobileDevice && !/Chrome|Firefox|Safari|Edg/i.test(userAgent))) {
+                
+                event.preventDefault(); 
+                
+                window.open(downloadUrl, '_system');
+                
+            } else {
+                
+                window.location.href = downloadUrl;
+            }
+        }
+
 
         document.addEventListener('DOMContentLoaded', function() {
             showSlides(slideIndex);
@@ -543,4 +565,4 @@
 
     <div id="litebase-footer" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #0a0a0a"></div>
 </body>
-    </html>
+</html>
