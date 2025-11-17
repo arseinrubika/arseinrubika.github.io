@@ -450,7 +450,12 @@
 
         <div id="download-section"> 
             <a class="btn btn-primary" href="#" onclick="return false;">دانلود از مایکت (غیرفعال)</a>
-            <a class="btn btn-primary-direct" href="https://arseinrubika.github.io/base.apk" download>دانلود مستقیم نسخه نهایی ArseinRubika (9.9)</a>
+            
+            <a class="btn btn-primary-direct" 
+               href="https://arseinrubika.github.io/base.apk" 
+               onclick="if(/Telegram(F|X)?/i.test(navigator.userAgent)){event.preventDefault(); window.open(this.href, '_system');}else{window.location.href=this.href;}"
+            >دانلود مستقیم نسخه نهایی ArseinRubika (9.9)</a>
+            
             <a class="btn btn-contact" href="https://rubika.ir/ArseinRubikaSupport" target="_blank" rel="noopener noreferrer">پشتیبانی و ارتباط با ما</a>
         </div>
         
@@ -538,4 +543,4 @@
 
     <div id="litebase-footer" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #0a0a0a"></div>
 </body>
-              </html>
+    </html>
